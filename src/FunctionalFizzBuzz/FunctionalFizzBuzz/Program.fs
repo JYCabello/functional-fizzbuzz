@@ -29,7 +29,7 @@ let printer (fb: FizzBuzz) : string =
   | FizzBuzz -> "FizzBuzz"
   | Number n -> string n
 
-let fizzBuzz : int -> string =
+let fizzBuzz =
   doFizzBuzz toFizzBuzz printer
 
 
