@@ -25,8 +25,7 @@ let printer fb =
   | FizzBuzz -> "FizzBuzz"
   | Number n -> string n
 
-let fizzBuzz n =
-  n |> toFizzBuzz |> printer
+let fizzBuzz = toFizzBuzz >> printer
 
 
 
