@@ -22,15 +22,14 @@ let toFizzBuzz (n: int) : FizzBuzz =
   | IsMultipleOf 5 -> Buzz
   | number -> Number number
   
-let printer (fb: FizzBuzz) : string =
+let printer fb =
   match fb with
   | Fizz -> "Fizz"
   | Buzz -> "Buzz"
   | FizzBuzz -> "FizzBuzz"
   | Number n -> string n
 
-let fizzBuzz =
-  doFizzBuzz toFizzBuzz printer
+let fizzBuzz = doFizzBuzz toFizzBuzz printer
 
 
 
