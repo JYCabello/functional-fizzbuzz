@@ -6,10 +6,6 @@ type FizzBuzz =
   | FizzBuzz
   | Number of int
 
-let doFizzBuzz tfb printer n =
-  let fb = tfb n
-  printer fb
-
 let (|IsMultipleOf|_|) multiplier n =
   match n % multiplier with
   | 0 -> Some ()
@@ -29,7 +25,8 @@ let printer fb =
   | FizzBuzz -> "FizzBuzz"
   | Number n -> string n
 
-let fizzBuzz = doFizzBuzz toFizzBuzz printer
+let fizzBuzz n =
+  n |> toFizzBuzz |> printer
 
 
 
