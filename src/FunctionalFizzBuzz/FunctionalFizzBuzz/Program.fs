@@ -6,7 +6,7 @@ type FizzBuzz =
   | FizzBuzz
   | Number of int
 
-let doFizzBuzz (tfb: int -> FizzBuzz) (printer: FizzBuzz -> string) (n: int) : string =
+let doFizzBuzz tfb printer n =
   let fb = tfb n
   printer fb
 
