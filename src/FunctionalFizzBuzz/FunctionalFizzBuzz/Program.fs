@@ -10,7 +10,7 @@ let doFizzBuzz (tfb: int -> FizzBuzz) (printer: FizzBuzz -> string) (n: int) : s
   let fb = tfb n
   printer fb
 
-let (|IsMultipleOf|_|) (multiplier: int) (n: int) : unit option =
+let (|IsMultipleOf|_|) multiplier n =
   match n % multiplier with
   | 0 -> Some ()
   | _ -> None
