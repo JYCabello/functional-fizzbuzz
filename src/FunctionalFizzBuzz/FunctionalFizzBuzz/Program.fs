@@ -11,15 +11,15 @@ let (|IsMultipleOf|_|) multiplier n =
   | 0 -> Some ()
   | _ -> None
 
-let toFizzBuzz n =
-  match n with
+let toFizzBuzz =
+  function
   | IsMultipleOf 3 & IsMultipleOf 5 -> FizzBuzz
   | IsMultipleOf 3 -> Fizz
   | IsMultipleOf 5 -> Buzz
   | number -> Number number
-  
-let printer fb =
-  match fb with
+
+let printer =
+  function
   | Fizz -> "Fizz"
   | Buzz -> "Buzz"
   | FizzBuzz -> "FizzBuzz"
