@@ -1,15 +1,11 @@
 ﻿module FunctionalFizzBuzz
+open FunctionalFizzBuzzCommon
 
 type FizzBuzz =
   | Fizz
   | Buzz
   | FizzBuzz
   | Number of int
-
-let (|IsMultipleOf|_|) multiplier n =
-  match n % multiplier with
-  | 0 -> Some ()
-  | _ -> None
 
 let toFizzBuzz =
   function

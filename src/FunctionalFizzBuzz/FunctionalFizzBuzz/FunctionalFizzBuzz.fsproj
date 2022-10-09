@@ -7,7 +7,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Program.fs"/>
+        <Compile Include="Common.fs" />
+        <Compile Include="Folding.fs" />
+        <Compile Include="Program.fs" />
     </ItemGroup>
 
 </Project>

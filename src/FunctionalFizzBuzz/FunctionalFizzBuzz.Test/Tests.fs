@@ -3,6 +3,7 @@ module Tests
 open Xunit
 open FunctionalFizzBuzz
 
+
 [<Theory>]
 [<InlineData(1, "1")>]
 [<InlineData(7, "7")>]
@@ -14,3 +15,4 @@ open FunctionalFizzBuzz
 [<InlineData(45, "FizzBuzz")>]
 let ``My test`` input output =
     Assert.Equal(output, fizzBuzz input)
+    Assert.Equal(output, FunctionalFizzBuzzFolding.fizzBuzz input)
